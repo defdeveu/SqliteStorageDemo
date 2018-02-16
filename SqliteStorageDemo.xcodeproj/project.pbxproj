@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254B7EA8983ADC55794F0593 /* libPods-SqliteStorageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E34882D1C42653404895F933 /* libPods-SqliteStorageDemo.a */; };
 		2D2E0543202A5662008A8DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E0542202A5662008A8DB0 /* AppDelegate.m */; };
 		2D2E0546202A5662008A8DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E0545202A5662008A8DB0 /* ViewController.m */; };
 		2D2E0549202A5662008A8DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E0547202A5662008A8DB0 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001DE3B94BFEE17B3E13346C /* Pods-SqliteStorageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqliteStorageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SqliteStorageDemo/Pods-SqliteStorageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2D2E053E202A5662008A8DB0 /* SqliteStorageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteStorageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2E0541202A5662008A8DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D2E0542202A5662008A8DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		2D2E054D202A5662008A8DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D2E054F202A5662008A8DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D2E0550202A5662008A8DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E34882D1C42653404895F933 /* libPods-SqliteStorageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SqliteStorageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9810119A98CB89EE287627 /* Pods-SqliteStorageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqliteStorageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SqliteStorageDemo/Pods-SqliteStorageDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254B7EA8983ADC55794F0593 /* libPods-SqliteStorageDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06AB6C9C7FA3F59587FD4AAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				001DE3B94BFEE17B3E13346C /* Pods-SqliteStorageDemo.debug.xcconfig */,
+				EA9810119A98CB89EE287627 /* Pods-SqliteStorageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2D2E0535202A5662008A8DB0 = {
 			isa = PBXGroup;
 			children = (
 				2D2E0540202A5662008A8DB0 /* SqliteStorageDemo */,
 				2D2E053F202A5662008A8DB0 /* Products */,
+				06AB6C9C7FA3F59587FD4AAB /* Pods */,
+				E41C3D7194C9C2E8766FDB1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = SqliteStorageDemo;
 			sourceTree = "<group>";
 		};
+		E41C3D7194C9C2E8766FDB1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34882D1C42653404895F933 /* libPods-SqliteStorageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2E0554202A5662008A8DB0 /* Build configuration list for PBXNativeTarget "SqliteStorageDemo" */;
 			buildPhases = (
+				9133B375D6BB10DBFAECE720 /* [CP] Check Pods Manifest.lock */,
 				2D2E053A202A5662008A8DB0 /* Sources */,
 				2D2E053B202A5662008A8DB0 /* Frameworks */,
 				2D2E053C202A5662008A8DB0 /* Resources */,
+				0A478BACE58221D5C3B8FE94 /* [CP] Embed Pods Frameworks */,
+				C267D4BCB108D3E48272EA0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A478BACE58221D5C3B8FE94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SqliteStorageDemo/Pods-SqliteStorageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9133B375D6BB10DBFAECE720 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SqliteStorageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C267D4BCB108D3E48272EA0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SqliteStorageDemo/Pods-SqliteStorageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D2E053A202A5662008A8DB0 /* Sources */ = {
@@ -276,11 +354,13 @@
 		};
 		2D2E0555202A5662008A8DB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001DE3B94BFEE17B3E13346C /* Pods-SqliteStorageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = SqliteStorageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zsombor.SqliteStorageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,11 +370,13 @@
 		};
 		2D2E0556202A5662008A8DB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9810119A98CB89EE287627 /* Pods-SqliteStorageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = SqliteStorageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zsombor.SqliteStorageDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
